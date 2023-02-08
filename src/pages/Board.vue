@@ -20,8 +20,9 @@ const deleteTodo = (todo) => { todo_notes.value = todo_notes.value.filter((t) =>
 
 onMounted(() => { todo_notes.value = JSON.parse(localStorage.getItem('todo_notes')) || [] })
 
-function toggleToDoCreate() {
-const createTodo = document.querySelector(".create-todo");
+
+const toggleToDoCreate = () => {
+let createTodo = document.querySelector(".create-todo");
   if (createTodo.style.display === "none") {
     createTodo.style.display = "block";
   } else {
