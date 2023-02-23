@@ -10,7 +10,8 @@ body {
     width: 500px;
     height: 300px;
     left: 50%;
-    top: 40%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     background-color: white;
     background-position: center center;
 	text-align: center;
@@ -64,6 +65,11 @@ section {
 	margin-bottom: 2rem;
 	padding-left: 1.5rem;
 	padding-right: 1.5em;
+}
+
+.todo-list
+{
+	display: inline-block;
 }
 
 .clickable-board {
